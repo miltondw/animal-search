@@ -1,0 +1,27 @@
+# dependencies
+api/node_modules
+animal-search/node_modules
+# production
+api/build
+animal-search/build
+
+# misc
+api/.DS_Store
+api/.env.local
+api/.env.development.local
+api/.env.test.local
+api/.env.production.local
+
+animal-search/.DS_Store
+animal-search/.env.local
+animal-search/.env.development.local
+animal-search/.env.test.local
+animal-search/.env.production.local
+
+animal-search/npm-debug.log*
+animal-search/yarn-debug.log*
+animal-search/yarn-error.log*
+
+api/npm-debug.log*
+api/yarn-debug.log*
+api/yarn-error.log*

@@ -1,0 +1,10 @@
+@import "../../../scss/variables";
+
+.mainContainer {
+  width: 335px;
+  margin: 50px 10px 50px 10px;
+  @include tablet {
+    width: ($size * 5)+ ($gap * 5);
+    margin: 50px auto;
+  }
+}

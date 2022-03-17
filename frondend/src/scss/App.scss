@@ -1,0 +1,18 @@
+//conf
+@import "./variables";
+@import "./mixin";
+@import "./breakpoints";
+
+//Base
+@import "./base";
+@import "./normalize";
+//Components
+// Molecules
+@import "../components/Molecules/Box/BoxWord.module.scss";
+@import "../components/Molecules/Cards/Cards";
+@import "../components/Molecules/KeyBoard/KeyBoard";
+@import "../components/Molecules/Modal/Modal";
+@import "../components/Molecules/Navbar/Navbar";
+//Organisms
+@import "../components/Organisms/Row/Row";
+@import "../components/Organisms/Wordle/Wordle";

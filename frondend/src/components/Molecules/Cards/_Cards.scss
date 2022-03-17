@@ -1,0 +1,33 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  justify-items: center;
+  @include tablet {
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  }
+}
+.card-container {
+  height: 10em;
+  width: 10em;
+  margin: 1em;
+  border: 1px solid;
+
+  padding: 1em;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #dfd8d8b8;
+  border-radius: 50%;
+  cursor: pointer;
+  @include laptop {
+    height: 12em;
+    width: 12em;
+    margin: 0;
+  }
+  &:hover {
+    box-shadow: 1px 1px 13px 5px;
+    transform: scale(1.1);
+  }
+}

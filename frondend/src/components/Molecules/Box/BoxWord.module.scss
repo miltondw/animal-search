@@ -1,0 +1,24 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixin";
+
+.correct {
+  @include box;
+  background-color: $correct;
+  border: $correct solid 2px;
+}
+.present {
+  @include box;
+  background-color: $present;
+  border: $present solid 2px;
+}
+.absent {
+  @include box;
+  background-color: $absent;
+  border: $absent solid 2px;
+}
+.empty {
+  @include box;
+}
+.edit {
+  @include box;
+}

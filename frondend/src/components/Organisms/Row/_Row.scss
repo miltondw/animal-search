@@ -1,0 +1,7 @@
+@import "../../../scss/variables";
+.row {
+  display: flex;
+  gap: $gap;
+  margin-bottom: $gap;
+  text-transform: uppercase;
+}

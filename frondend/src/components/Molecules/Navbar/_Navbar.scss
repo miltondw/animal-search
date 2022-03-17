@@ -1,0 +1,93 @@
+.menu {
+  background: red;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 2.5em;
+  z-index: 500;
+  @include laptop {
+    background: transparent;
+  }
+  &-nav {
+    z-index: 400;
+    transform: translateX(-100%);
+    transition: 1.5s transform;
+    position: fixed;
+    top: 1.5em;
+    width: 50%;
+    &--active {
+      transform: translateX(0);
+      transition: 1.5s transform;
+    }
+    @include laptop {
+      transform: translate(0);
+      top: 0;
+      width: 100%;
+    }
+  }
+  &-content {
+    background: green;
+    list-style: none;
+    padding: 0.5em;
+    @include laptop {
+      display: flex;
+      justify-content: space-evenly;
+      background: transparent;
+    }
+  }
+  &-item {
+    margin: 0.7em 0;
+    &__link {
+      text-decoration: none;
+      color: white;
+      font-size: 1.3em;
+    }
+  }
+}
+.toggle-menu {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  margin-left: 0.5em;
+  left: 0;
+  z-index: 500;
+  top: 0.5em;
+  &__icon {
+    height: 40px;
+    width: 40px;
+    position: relative;
+  }
+  & .first-bar,
+  & .second-bar,
+  & .third-bar {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: transform 0.3s;
+  }
+  & .first-bar {
+    top: 5px;
+  }
+  & .second-bar {
+    top: 15px;
+  }
+  & .third-bar {
+    top: 25px;
+  }
+  .first-bar.show {
+    transform: rotate(-45deg);
+    top: 1rem;
+  }
+  .second-bar.show {
+    width: 0;
+  }
+  .third-bar.show {
+    transform: rotate(45deg);
+    top: 1rem;
+  }
+  @include laptop {
+    display: none;
+  }
+}

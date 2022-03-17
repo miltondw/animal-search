@@ -1,0 +1,33 @@
+.keyBoardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 340px;
+  margin: 0 0 10px 15px;
+  gap: 5px;
+  @include tablet {
+    width: 570px;
+    margin: 0 auto;
+  }
+}
+.key {
+  @include keyBase;
+  width: 50px;
+}
+.emptyKey {
+  width: 25px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.enterKey,
+.deleteKey {
+  @include keyBase;
+  width: 80px;
+}
+.deleteKey {
+  background-color: #eb0808;
+}
+.enterKey {
+  background-color: #080beb;
+}
